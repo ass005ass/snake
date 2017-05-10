@@ -16,44 +16,11 @@ namespace Snake
             Point p2 = new Point(4,5,'#');
             p2.Drow();
 
-            Point p3 = new Point(8, 8, '@');
-            p3.Drow();
+            HorizontalLine HLine = new HorizontalLine(5, 10, 8,'+');
+            HLine.Drow();
 
-            Point p4 = new Point(9, 8, '$');
-            p4.Drow();
-
-            Point p5 = new Point(10, 8, '%');
-            p5.Drow();
-
-            Point p6 = new Point(11, 8, '&');
-            p6.Drow();
-
-
-
-            List<int> numList = new List<int>();
-            numList.Add( 0 );
-            numList.Add( 1 );
-            numList.Add( 2 );
-
-            int x = numList[ 0 ];
-            int y = numList[ 1 ];
-            int z = numList[ 2 ];
-
-            foreach( int i in numList )
-            {
-                Console.WriteLine( i );
-            }
-
-            numList.RemoveAt(0);
-
-            List<Point> pList = new List<Point>();
-            pList.Add(p1);
-            pList.Add(p2);
-            pList.Add(p3);
-            pList.Add(p4);
-            pList.Add(p5);
-            pList.Add(p6);
-
+            VerticalLine VLine = new VerticalLine(12, 8, 13, '*');
+            VLine.Drow();
 
             Console.ReadLine();
 
